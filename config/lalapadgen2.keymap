@@ -11,6 +11,48 @@
 #define TERTIARY_LAYER  2
 #define SYSTEM_LAYER    3
 
+/* JIS Key Aliases */
+#define JP_ZKHK  GRAVE
+#define JP_MINUS MINUS
+#define JP_CARET EQUAL
+#define JP_YEN   INT3
+#define JP_AT    LBKT
+#define JP_LBKT  RBKT
+#define JP_EISU  CAPS
+#define JP_SEMI  SEMI
+#define JP_COLON SQT
+#define JP_RBKT  NUHS
+#define JP_COMMA COMMA
+#define JP_DOT   DOT
+#define JP_SLASH SLASH
+#define JP_BSLH  INT1
+#define JP_MHEN  INT5
+#define JP_HENK  INT4
+#define JP_KANA  INT2
+#define JP_EXCL  LS(N1)
+#define JP_DQT   LS(N2)
+#define JP_HASH  LS(N3)
+#define JP_DLLR  LS(N4)
+#define JP_PRCNT LS(N5)
+#define JP_AMPS  LS(N6)
+#define JP_SQT   LS(N7)
+#define JP_LPAR  LS(N8)
+#define JP_RPAR  LS(N9)
+#define JP_EQUAL LS(JP_MINUS)
+#define JP_TILDE LS(JP_CARET)
+#define JP_PIPE  LS(JP_YEN)
+#define JP_GRAVE LS(JP_AT)
+#define JP_LBRC  LS(JP_LBKT)
+#define JP_CAPS  LS(JP_EISU)
+#define JP_PLUS  LS(JP_SEMI)
+#define JP_ASTRK LS(JP_COLON)
+#define JP_RBRC  LS(JP_RBKT)
+#define JP_LT    LS(JP_COMMA)
+#define JP_RT    LS(JP_DOT)
+#define JP_QMARK LS(JP_SLASH)
+#define JP_UNDER LS(JP_BSLH)
+#define JP_EQUA  LS(JP_EQUAL)
+
 &mt { quick-tap-ms = <200>; };
 
 &lt { quick-tap-ms = <200>; };
@@ -65,10 +107,10 @@
         DEFAULT_LAYER {
             display-name = "Default";
             bindings = <
-&kp Q              &kp W      &kp E         &kp R      &kp T                                     &kp Y      &kp U     &kp I           &kp O           &kp P
-&kp A              &kp S      &kp D         &kp F      &kp G                                     &kp H      &kp J     &kp K           &kp L           &mt2 EQUAL MINUS
-&mt2 LEFT_SHIFT Z  &kp X      &kp C         &kp V      &kp B                                     &kp N      &kp M     &kp COMMA       &kp PERIOD      &kp SLASH
-&kp LCTRL          &kp LWIN   &kp LEFT_ALT  &mo 1      &kp SPACE  &kp LEFT_SHIFT  &kp BACKSPACE  &kp ENTER  &mo 2     &kp LANGUAGE_2  &kp LANGUAGE_1  &kp BACKSLASH
+&kp Q              &kp W      &kp E         &kp R          &kp T                                     &kp Y      &kp U     &kp I           &kp O           &kp P
+&kp A              &kp S      &kp D         &kp F          &kp G                                     &kp H      &kp J     &kp K           &kp L           &kp SEMI
+&mt2 LEFT_SHIFT Z  &kp X      &kp C         &kp V          &kp B                                     &kp N      &kp M     &kp COMMA       &kp PERIOD      &kp SLASH
+&kp LCTRL          &kp LALT   &kp LWIN      &lt 2 SPACE    &kp LCTRL  &kp LEFT_SHIFT  &kp LALT       &kp BSPC   &lt 1 RET &kp LANGUAGE_2  &kp LANGUAGE_1  &kp BACKSLASH
                    &none      &kp RIGHT     &kp DOWN   &kp LEFT   &kp UP          &kp UP         &kp LEFT   &kp DOWN  &kp RIGHT       &none
 &mkp LCLK          &mkp RCLK  &mkp MCLK                                                                               &mkp LCLK       &mkp RCLK       &mkp MCLK
 &mkp MB4           &mkp MB5   &kp LG(TAB)   &kp LG(D)  &kp LCTRL                                 &mkp MB4   &mkp MB5  &kp LG(TAB)     &kp LG(D)       &kp LCTRL
@@ -78,9 +120,9 @@
         SECONDARY_LAYER {
             display-name = "secondary_layer";
             bindings = <
-&kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3  &kp NUMBER_4  &kp N5                    &kp KP_NUMLOCK    &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS
-&kp NUMBER_6      &kp N7             &kp N8        &kp N9        &kp N0                    &trans            &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
-&kp F6            &kp F7             &kp F8        &kp F9        &kp F10                   &trans            &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ASTERISK
+&kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3  &kp NUMBER_4  &kp N5                    &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp JP_MINUS      &kp KP_PLUS
+&kp NUMBER_6      &kp N7             &kp N8        &kp N9        &kp N0                    &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0   &kp KP_MINUS
+&kp F6            &kp F7             &kp F8        &kp F9        &kp F10                   &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans            &kp KP_ASTERISK
 &trans            &trans             &trans        &trans        &trans   &trans  &kp DEL  &trans            &trans             &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_DIVIDE
                   &trans             &trans        &trans        &trans   &trans  &trans   &trans            &trans             &trans           &trans
 &trans            &trans             &trans                                                                                     &trans           &trans           &trans
