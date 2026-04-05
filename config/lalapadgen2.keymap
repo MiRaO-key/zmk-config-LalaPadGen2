@@ -95,7 +95,7 @@
             key-positions = <0 1>;
         };
 
-        CONBO_ESC {
+        CONBO_JPAT {
             bindings = <&kp JP_AT>;
             key-positions = <8 9>;
         };
@@ -105,7 +105,7 @@
             key-positions = <10 11>;
         };
 
-        COMBO_TAB {
+        COMBO_JP_PIPE {
             bindings = <&kp JP_PIPE>;
             key-positions = <18 19>;
         };
