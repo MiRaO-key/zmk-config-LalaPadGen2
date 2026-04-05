@@ -162,7 +162,7 @@
 &kp NONE  &kp NONE  &kp NONE  &kp NONE  &kp NONE                   &kp JP_LBRC                   &kp JP_RBRC                   &kp NONE                   &kp NONE                   &kp NONE
 &kp NONE  &kp NONE  &kp NONE  &kp NONE  &kp NONE                   &kp JP_LBKT                   &kp JP_RBKT                   &kp NONE                   &kp NONE                   &kp NONE
 &kp NONE  &kp NONE  &kp NONE  &kp NONE  &kp NONE  &kp NONE  &kp NONE  &kp NONE                   &kp NONE                   &kp NONE                   &kp NONE                   &kp NONE
-         &kp NONE  &kp NONE  &kp NONE  &kp NONE  &kp NONE  &kp NONE  &kp NONE                   &kp NONE                   &kp NONE                   &kp NONE
+         &trans   &trans   &trans   &trans   &trans  &trans  &trans                         &trans                         &trans                         &trans
 &trans   &trans   &trans                                                                                                   &trans                         &trans                         &trans
 &trans   &trans   &trans   &trans   &trans                   &trans                         &trans                         &trans                         &trans                         &trans
             >;
