@@ -156,7 +156,7 @@
         };
 
         FOURTH_LAYER {
-            display-name = "system_layer";
+            display-name = "fourth_layer";
             bindings = <
 &kp NONE  &kp NONE  &kp NONE  &kp NONE  &kp NONE                   &kp JP_LPAR                   &kp JP_RPAR                   &kp NONE                   &kp NONE                   &kp NONE
 &kp NONE  &kp NONE  &kp NONE  &kp NONE  &kp NONE                   &kp JP_LBRC                   &kp JP_RBRC                   &kp NONE                   &kp NONE                   &kp NONE
