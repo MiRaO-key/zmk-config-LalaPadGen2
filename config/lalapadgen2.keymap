@@ -190,7 +190,7 @@
         };
     };
 
-    conditional_layers {
+/*    conditional_layers {
         compatible = "zmk,conditional-layers";
 
         Cond_Syslayer {
@@ -198,4 +198,5 @@
             then-layer = <3>;
         };
     };
+*/
 };
